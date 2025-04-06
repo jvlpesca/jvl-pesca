@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JVL PESCA</title>
+    <link rel="icon" type="image/jpg" href="../../img/logo.png">
+  </head>
+ <body>
+    <header class="header">
+        <div class="logo-container">
+            <a href="/jvl-pesca/index.html">
+                <img src="../../img/logo.png" alt="logo-jvl" class="logo">
+            </a>
+        </div>
+        <div class="slogan">
+            <p>Pesque com qualidade, pesque com JVL!</p>
+        </div>
+    </header>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Imagem do produto -->
+        <div class="product-image">
+            <img id="productImage" src="https://arquivos.mercos.com/media/imagem_produto/307641/75f1fb30-8a5f-11ef-ae9d-fa90b1e25bd3.jpg" alt="Produto">
+        </div>
+
+        <!-- Informações do produto -->
+        <div class="product-info">
+            <h1 id="productName">VARA CONTEST OCEAN</h1>
+            <p id="productDescription">A Vara Contest Ocean é uma vara de pesca robusta e de alta performance, ideal para pescarias em ambientes marinhos. Com construção resistente e materiais de alta qualidade, ela oferece excelente durabilidade e resistência, mesmo nas condições mais desafiadoras. Seu design ergonômico proporciona conforto durante longos períodos de pesca, enquanto sua ação precisa garante controle e precisão nos arremessos. Perfeita para pescadores que buscam um equipamento confiável para pesca oceânica, a Vara Contest Ocean é a escolha ideal para capturar grandes peixes com eficiência.</p>
+            <p class="price" id="productPrice">A partir de R$ 230,96</p>
+
+            <!-- Botões para variações -->
+            <div class="buttons">
+                <button onclick="updateProduct('VARA CONTEST OCEAN PE1.5 C-632', 'https://arquivos.mercos.com/media/imagem_produto/307641/75f1fb30-8a5f-11ef-ae9d-fa90b1e25bd3.jpg', 'R$ 230,96')">PE1.5 C-632</button>
+                <button onclick="updateProduct('VARA CONTEST OCEAN PE1.5 S-632', 'https://arquivos.mercos.com/media/imagem_produto/307641/75f1fb30-8a5f-11ef-ae9d-fa90b1e25bd3.jpg', 'R$ 230,96')">PE1.5 S-632</button>
+                <button onclick="updateProduct('VARA CONTEST OCEAN PE2.5 C-632', 'https://arquivos.mercos.com/media/imagem_produto/307641/75f1fb30-8a5f-11ef-ae9d-fa90b1e25bd3.jpg', 'R$ 240,75')">PE2.5 C-632</button>
+                <button onclick="updateProduct('VARA CONTEST OCEAN PE2.5 S-632', 'https://arquivos.mercos.com/media/imagem_produto/307641/75f1fb30-8a5f-11ef-ae9d-fa90b1e25bd3.jpg', 'R$ 240,75')">PE2.5 S-632</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateProduct(name, imageUrl, price) {
+            // Atualiza o nome, a imagem e o preço com as informações da variante selecionada
+            document.getElementById('productName').innerText = name;
+            document.getElementById('productImage').src = imageUrl;
+            document.getElementById('productPrice').innerText = price;
+        }
+    </script>
+    <footer>
+        <img src="../../img/pesca.gif" alt="Logo de Pesca" class="logo-footer">
+        <ul class="sociais">
+            <li><a href="https://wa.me/554298713665/" class="social-link">Whatsapp</a></li> 
+            <li><a href="https://www.instagram.com/jvl_pesca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link">Instagram</a></li>
+        </ul>
+        <hr>
+        <p>&copy; Todos os direitos reservados.</p>
+    </footer>
+ </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JVL PESCA</title>
+    <link rel="icon" type="image/jpg" href="../../img/logo.png">
+  </head>
+ <body>
+    <header class="header">
+        <div class="logo-container">
+            <a href="/jvl-pesca/index.html">
+                <img src="../../img/logo.png" alt="logo-jvl" class="logo">
+            </a>
+        </div>
+        <div class="slogan">
+            <p>Pesque com qualidade, pesque com JVL!</p>
+        </div>
+    </header>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Imagem do produto -->
+        <div class="product-image">
+            <img id="productImage" src="https://arquivos.mercos.com/media/imagem_produto/307641/14bb252a-d598-11ee-a2ae-1aaa65dd2350.jpg" alt="Produto">
+        </div>
+
+        <!-- Informações do produto -->
+        <div class="product-info">
+            <h1 id="productName">VARA ATAMA SW PE</h1>
+            <p id="productDescription">A Vara ATAMA SW PE é ideal para pescadores que buscam alta performance em ambientes de águas salgadas. Confeccionada com materiais de alta resistência, oferece potência e durabilidade para encarar os desafios da pesca esportiva em mar e costas rochosas. Sua construção é projetada para uso com linhas PE, proporcionando maior precisão e controle durante o arremesso. Perfeita para quem busca qualidade e resistência em equipamentos para pesca de grandes peixes.</p>
+            <p class="price" id="productPrice">R$ 481,86.</p>
+
+            <!-- Botões para variações -->
+            <div class="buttons">
+                <button onclick="updateProduct('VARA ATAMA SW PE 08-1.2 C-631/1', 'https://arquivos.mercos.com/media/imagem_produto/307641/14bb252a-d598-11ee-a2ae-1aaa65dd2350.jpg', 'R$ 481,86.')">08-1.2 C-631/1</button>
+                <button onclick="updateProduct('VARA ATAMA SW PE 1-2 C-631/2', 'https://arquivos.mercos.com/media/imagem_produto/307641/14bb252a-d598-11ee-a2ae-1aaa65dd2350.jpg', 'R$ 481,86.')">1-2 C-631/2</button>
+                <button onclick="updateProduct('VARA ATAMA SW PE 1.5-3 C-631/3',  'https://arquivos.mercos.com/media/imagem_produto/307641/14bb252a-d598-11ee-a2ae-1aaa65dd2350.jpg', 'R$ 481,86.')">1.5-3 C-631/3</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateProduct(name, imageUrl, price) {
+            // Atualiza o nome, a imagem e o preço com as informações da variante selecionada
+            document.getElementById('productName').innerText = name;
+            document.getElementById('productImage').src = imageUrl;
+            document.getElementById('productPrice').innerText = price;
+        }
+    </script>
+    <footer>
+        <img src="../../img/pesca.gif" alt="Logo de Pesca" class="logo-footer">
+        <ul class="sociais">
+            <li><a href="https://wa.me/554298713665/" class="social-link">Whatsapp</a></li> 
+            <li><a href="https://www.instagram.com/jvl_pesca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link">Instagram</a></li>
+        </ul>
+        <hr>
+        <p>&copy; Todos os direitos reservados.</p>
+    </footer>
+ </body>
+</html>

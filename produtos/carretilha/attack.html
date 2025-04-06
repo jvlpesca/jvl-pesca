@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JVL PESCA</title>
+    <link rel="icon" type="image/jpg" href="../../img/logo.png">
+  </head>
+ <body>
+    <header class="header">
+        <div class="logo-container">
+            <a href="/jvl-pesca/index.html">
+                <img src="../../img/logo.png" alt="logo-jvl" class="logo">
+            </a>
+        </div>
+        <div class="slogan">
+            <p>Pesque com qualidade, pesque com JVL!</p>
+        </div>
+    </header>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Imagem do produto -->
+        <div class="product-image">
+            <img id="productImage" src="https://arquivos.mercos.com/media/imagem_produto/307641/d9057142-eae7-11ee-8075-469b3f547b9b.jpg" alt="Produto">
+        </div>
+
+        <!-- Informações do produto -->
+        <div class="product-info">
+            <h1 id="productName">CARRETILHA ATTACK</h1>
+            <p id="productDescription">A Carretilha Attack é um equipamento de pesca projetado para oferecer desempenho e resistência excepcionais. Com um design robusto e leve, ela proporciona grande controle durante os arremessos e combates, ideal para pescadores que buscam agilidade e precisão. Seu sistema de freio ajustável garante uma performance consistente e segura, enquanto a construção em materiais duráveis oferece maior longevidade ao produto. A Carretilha Attack é perfeita para pescadores que desejam um equipamento confiável e eficiente, ideal para diversas modalidades de pesca, tanto em água doce quanto salgada.</p>
+            <p class="price" id="productPrice">R$ 367,65</p>
+
+            <!-- Botões para variações -->
+            <div class="buttons">
+                <button onclick="updateProduct('CARRETILHA ATTACK BLACK', 'https://arquivos.mercos.com/media/imagem_produto/307641/d9057142-eae7-11ee-8075-469b3f547b9b.jpg', 'R$ 367,65')">BLACK</button>
+                <button onclick="updateProduct('CARRETILHA ATTACK SILVER', 'https://arquivos.mercos.com/media/imagem_produto/307641/e4dfb432-eae7-11ee-86ce-d2b37787d8ed.jpg', 'R$ 367,65')">SILVER</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateProduct(name, imageUrl, price) {
+            // Atualiza o nome, a imagem e o preço com as informações da variante selecionada
+            document.getElementById('productName').innerText = name;
+            document.getElementById('productImage').src = imageUrl;
+            document.getElementById('productPrice').innerText = price;
+        }
+    </script>
+    <footer>
+        <img src="../../img/pesca.gif" alt="Logo de Pesca" class="logo-footer">
+        <ul class="sociais">
+            <li><a href="https://wa.me/554298713665/" class="social-link">Whatsapp</a></li> 
+            <li><a href="https://www.instagram.com/jvl_pesca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link">Instagram</a></li>
+        </ul>
+        <hr>
+        <p>&copy; Todos os direitos reservados.</p>
+    </footer>
+ </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JVL PESCA</title>
+    <link rel="icon" type="image/jpg" href="../../img/logo.png">
+  </head>
+ <body>
+    <header class="header">
+        <div class="logo-container">
+            <a href="/jvl-pesca/index.html">
+                <img src="../../img/logo.png" alt="logo-jvl" class="logo">
+            </a>
+        </div>
+        <div class="slogan">
+            <p>Pesque com qualidade, pesque com JVL!</p>
+        </div>
+    </header>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Imagem do produto -->
+        <div class="product-image">
+            <img id="productImage" src="https://arquivos.mercos.com/media/imagem_produto/307641/cab66ca0-f1e9-11ee-bd25-6e72e76b5d15.jpg" alt="Produto">
+        </div>
+
+        <!-- Informações do produto -->
+        <div class="product-info">
+            <h1 id="productName">CARRETILHA ATTACK</h1>
+            <p id="productDescription">A Carretilha Juice é um equipamento de pesca projetado para oferecer desempenho excepcional e conforto durante a pescaria. Com um design moderno e compacto, ela proporciona arremessos suaves e precisos, ideais para diversas modalidades de pesca. Seu sistema de freio ajustável oferece controle completo durante o combate com os peixes, permitindo um ajuste fino para diferentes condições. A Carretilha Juice é construída com materiais de alta qualidade, garantindo durabilidade e resistência, sendo uma excelente opção para pescadores que buscam um equipamento confiável e de alto desempenho em suas pescarias, seja em água doce ou salgada.</p>
+            <p class="price" id="productPrice">R$ 294,77</p>
+
+            <!-- Botões para variações -->
+            <div class="buttons">
+                <button onclick="updateProduct('CARRETILHA JUICE BLACK', 'https://arquivos.mercos.com/media/imagem_produto/307641/cab66ca0-f1e9-11ee-bd25-6e72e76b5d15.jpg', 'R$ 294,77')">BLACK</button>
+                <button onclick="updateProduct('CARRETILHA JUICE RED', 'https://arquivos.mercos.com/media/imagem_produto/307641/eb1bbf0e-f1e9-11ee-b16b-92b88477c8b5.jpg', 'R$ 294,77')">RED</button>
+                <button onclick="updateProduct('CARRETILHA JUICE BLUE', 'https://arquivos.mercos.com/media/imagem_produto/307641/d6e4e57e-f1e9-11ee-b142-8eb4715d9397.jpg', 'R$ 294,77')">BLUE</button>
+                <button onclick="updateProduct('CARRETILHA JUICE PINK', 'https://arquivos.mercos.com/media/imagem_produto/307641/e1310dc8-f1e9-11ee-9761-1a7beaf85e4c.jpg', 'R$ 294,77')">PINK</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateProduct(name, imageUrl, price) {
+            // Atualiza o nome, a imagem e o preço com as informações da variante selecionada
+            document.getElementById('productName').innerText = name;
+            document.getElementById('productImage').src = imageUrl;
+            document.getElementById('productPrice').innerText = price;
+        }
+    </script>
+    <footer>
+        <img src="../../img/pesca.gif" alt="Logo de Pesca" class="logo-footer">
+        <ul class="sociais">
+            <li><a href="https://wa.me/554298713665/" class="social-link">Whatsapp</a></li> 
+            <li><a href="https://www.instagram.com/jvl_pesca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link">Instagram</a></li>
+        </ul>
+        <hr>
+        <p>&copy; Todos os direitos reservados.</p>
+    </footer>
+ </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JVL PESCA</title>
+    <link rel="icon" type="image/jpg" href="../../img/logo.png">
+  </head>
+ <body>
+    <header class="header">
+        <div class="logo-container">
+            <a href="/jvl-pesca/index.html">
+                <img src="../../img/logo.png" alt="logo-jvl" class="logo">
+            </a>
+        </div>
+        <div class="slogan">
+            <p>Pesque com qualidade, pesque com JVL!</p>
+        </div>
+    </header>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Imagem do produto -->
+        <div class="product-image">
+            <img id="productImage" src="https://arquivos.mercos.com/media/imagem_produto/307641/03d42b32-85a4-11ef-b6d1-ce36ca75906a.jpg" alt="Produto">
+        </div>
+
+        <!-- Informações do produto -->
+        <div class="product-info">
+            <h1 id="productName">MOLINETE VERTIX</h1>
+            <p id="productDescription">O Molinete Vertix é um equipamento de pesca moderno e de alto desempenho, projetado para atender às necessidades dos pescadores mais exigentes. Com uma construção leve e robusta, oferece excelente durabilidade e resistência, além de um sistema de recuperação suave e eficiente para arremessos precisos. Seu design ergonômico proporciona maior conforto durante longos períodos de pesca, enquanto seu sistema de freio ajustável garante controle total durante o combate com os peixes. Ideal para diferentes técnicas de pesca, o Molinete Vertix é a escolha perfeita para quem busca qualidade, confiabilidade e desempenho superior.</p>
+            <p class="price" id="productPrice">A partir de R$ 160,78</p>
+
+            <!-- Botões para variações -->
+            <div class="buttons">
+                <button onclick="updateProduct('MOLINETE VERTIX 6000', 'https://arquivos.mercos.com/media/imagem_produto/307641/03d42b32-85a4-11ef-b6d1-ce36ca75906a.jpg', 'R$ 160,78')">1000</button>
+                <button onclick="updateProduct('MOLINETE VERTIX 2000', 'https://arquivos.mercos.com/media/imagem_produto/307641/03d42b32-85a4-11ef-b6d1-ce36ca75906a.jpg' , 'R$ 164,78')">2000</button>
+                <button onclick="updateProduct('MOLINETE VERTIX 3000', 'https://arquivos.mercos.com/media/imagem_produto/307641/03d42b32-85a4-11ef-b6d1-ce36ca75906a.jpg', 'R$ 173,68')">3000</button>
+                <button onclick="updateProduct('MOLINETE VERTIX 4000', 'https://arquivos.mercos.com/media/imagem_produto/307641/03d42b32-85a4-11ef-b6d1-ce36ca75906a.jpg', 'R$ 177,36')">4000</button>
+                <button onclick="updateProduct('MOLINETE VERTIX 5000', 'https://arquivos.mercos.com/media/imagem_produto/307641/03d42b32-85a4-11ef-b6d1-ce36ca75906a.jpg', 'R$ 186,27')">5000</button>
+                <button onclick="updateProduct('MOLINETE VERTIX 6000', 'https://arquivos.mercos.com/media/imagem_produto/307641/03d42b32-85a4-11ef-b6d1-ce36ca75906a.jpg', 'R$ 189,95')">6000</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateProduct(name, imageUrl, price) {
+            // Atualiza o nome, a imagem e o preço com as informações da variante selecionada
+            document.getElementById('productName').innerText = name;
+            document.getElementById('productImage').src = imageUrl;
+            document.getElementById('productPrice').innerText = price;
+        }
+    </script>
+    <footer>
+        <img src="../../img/pesca.gif" alt="Logo de Pesca" class="logo-footer">
+        <ul class="sociais">
+            <li><a href="https://wa.me/554298713665/" class="social-link">Whatsapp</a></li> 
+            <li><a href="https://www.instagram.com/jvl_pesca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link">Instagram</a></li>
+        </ul>
+        <hr>
+        <p>&copy; Todos os direitos reservados.</p>
+    </footer>
+ </body>
+</html>

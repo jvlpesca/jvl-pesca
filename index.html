@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JVL PESCA</title>
+    <link rel="icon" type="image/jpg" href="img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="img/logo.png" alt="logo-jvl" class="logo">
+            </a>
+        </div>
+        <div class="slogan">
+            <p>Pesque com qualidade, pesque com JVL!</p>
+        </div>
+    </header>
+
+    <section class="slideshow-container">
+        <div class="slide fade">
+            <img src="img/banner1.png" alt="Banner 1">
+        </div>
+        <div class="slide fade">
+            <img src="img/banner2.png" alt="Banner 2">
+        </div>
+        <!-- <div class="slide fade">
+            <img src="" alt="Banner 3">
+        </div> -->
+    
+        <!-- Botões de navegação -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+    
+    <script>
+        let slideIndex = 0;
+    
+        // Função para mudar de slide
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        // Função para exibir o slide atual
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("slide");
+            if (n >= slides.length) {
+                slideIndex = 0; // Se o último slide for exibido, volta para o primeiro
+            }
+            if (n < 0) {
+                slideIndex = slides.length - 1; // Se o primeiro slide for exibido, vai para o último
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; // Esconde todos os slides
+            }
+            slides[slideIndex].style.display = "block"; // Exibe o slide atual
+        }
+    
+        // Inicializa o slideshow
+        showSlides(slideIndex);
+    
+    </script>
+
+ <main class="main-content">
+ <div class="corpo">
+    <div class="destaques">
+        <div class="categorias-container">
+            <div class="categoria" id="varas">
+                <a href="vara.html">
+                    <h3>Varas</h3>
+                </a>
+            </div>
+            <div class="categoria" id="molinetes">
+                <a href="molinete.html">
+                    <h3>Molinete</h3>
+                </a>
+            </div>
+            <div class="categoria" id="iscas">
+                <a href="iscas.html">
+                    <h3>Iscas</h3>
+                </a>
+            </div>
+            <div class="categoria" id="carretilhas">
+                <a href="carretilha.html">
+                    <h3>Carretilhas</h3>
+                </a>
+            </div>
+        </div>
+</main>
+<footer>
+    <img src="img/pesca.gif" alt="Logo de Pesca" class="logo-footer">
+    <ul class="sociais">
+        <li><a href="https://wa.me/554298713665/" class="social-link">Whatsapp</a></li> 
+        <li><a href="https://www.instagram.com/jvl_pesca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link">Instagram</a></li>
+    </ul>
+    <hr>
+    <p>&copy; Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

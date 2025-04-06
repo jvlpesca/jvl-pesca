@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JVL PESCA</title>
+    <link rel="icon" type="image/jpg" href="../../img/logo.png">
+  </head>
+ <body>
+    <header class="header">
+        <div class="logo-container">
+            <a href="/jvl-pesca/index.html">
+                <img src="../../img/logo.png" alt="logo-jvl" class="logo">
+            </a>
+        </div>
+        <div class="slogan">
+            <p>Pesque com qualidade, pesque com JVL!</p>
+        </div>
+    </header>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Imagem do produto -->
+        <div class="product-image">
+            <img id="productImage" src="https://arquivos.mercos.com/media/imagem_produto/307641/b7f4f406-274f-11ef-b97e-52a92db94617.jpg" alt="Produto">
+        </div>
+
+        <!-- Informações do produto -->
+        <div class="product-info">
+            <h1 id="productName">VARA PRO CARBON</h1>
+            <p id="productDescription">Tênis de alta performance, ideal para corridas e atividades físicas. Confortável e com design moderno.</p>
+            <p class="price" id="productPrice">R$ 199,99</p>
+
+            <!-- Botões para variações -->
+            <div class="buttons">
+                <button onclick="updateProduct('VARA PRO CARBON 6-12LB C-561L', 'https://arquivos.mercos.com/media/imagem_produto/307641/b7f4f406-274f-11ef-b97e-52a92db94617.jpg' , 'R$ 176,86')">6-12LB C-561L</button>
+                <button onclick="updateProduct('VARA PRO CARBON 6-12LB S-561L', 'https://arquivos.mercos.com/media/imagem_produto/307641/b7f4f406-274f-11ef-b97e-52a92db94617.jpg', 'R$ 176,86')">6-12LB S-561L</button>
+                <button onclick="updateProduct('VARA PRO CARBON FG 7-14LB C-561ML', 'https://arquivos.mercos.com/media/imagem_produto/307641/b7f4f406-274f-11ef-b97e-52a92db94617.jpg', 'R$ 188,32')">7-14LB C-561ML</button>
+                <button onclick="updateProduct('VARA PRO CARBON FG 7-14LB S-561ML', 'https://arquivos.mercos.com/media/imagem_produto/307641/b7f4f406-274f-11ef-b97e-52a92db94617.jpg', 'R$ 188,32')">7-14LB S-561ML</button>
+                <button onclick="updateProduct('VARA PRO CARBON 8-17LB C-561M', 'https://arquivos.mercos.com/media/imagem_produto/307641/b7f4f406-274f-11ef-b97e-52a92db94617.jpg', ' R$ 202,09')">8-17LB C-561M</button>
+                <button onclick="updateProduct('VARA PRO CARBON 8-17LB S-561M', 'https://arquivos.mercos.com/media/imagem_produto/307641/b7f4f406-274f-11ef-b97e-52a92db94617.jpg', ' R$ 202,09')">8-17LB S-561M</button>
+                <button onclick="updateProduct('VARA PRO CARBON 8-17LB C-601M', 'https://arquivos.mercos.com/media/imagem_produto/307641/b7f4f406-274f-11ef-b97e-52a92db94617.jpg', 'R$ 210,29')">8-17LB C-601M</button>
+                <button onclick="updateProduct('VARA PRO CARBON 8-17LB S-601M', 'https://arquivos.mercos.com/media/imagem_produto/307641/b7f4f406-274f-11ef-b97e-52a92db94617.jpg', 'R$ 210,29')">8-17LB S-601M</button>
+                <button onclick="updateProduct('VARA PRO CARBON 10-20LB C-561MH', 'https://arquivos.mercos.com/media/imagem_produto/307641/b7f4f406-274f-11ef-b97e-52a92db94617.jpg', 'R$ 219,78')">10-20LB C-561MH</button>
+                <button onclick="updateProduct('VARA PRO CARBON 10-20LB C-601MH', 'https://arquivos.mercos.com/media/imagem_produto/307641/b7f4f406-274f-11ef-b97e-52a92db94617.jpg', 'R$ 232,54')">10-20LB C-601MH</button>
+                <button onclick="updateProduct('VARA PRO CARBON 10-20LB S-601MH', 'https://arquivos.mercos.com/media/imagem_produto/307641/b7f4f406-274f-11ef-b97e-52a92db94617.jpg', 'R$ 232,54')">10-20LB S-601MH</button>
+                <button onclick="updateProduct('VARA PRO CARBON 12-25LB C-561H', 'https://arquivos.mercos.com/media/imagem_produto/307641/b7f4f406-274f-11ef-b97e-52a92db94617.jpg', 'R$ 232,54')">12-25LB C-561H</button>
+                <button onclick="updateProduct('VARA PRO CARBON 12-25LB C-601H', 'https://arquivos.mercos.com/media/imagem_produto/307641/b7f4f406-274f-11ef-b97e-52a92db94617.jpg', 'R$ 247,60')">12-25LB C-601H</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateProduct(name, imageUrl, price) {
+            // Atualiza o nome, a imagem e o preço com as informações da variante selecionada
+            document.getElementById('productName').innerText = name;
+            document.getElementById('productImage').src = imageUrl;
+            document.getElementById('productPrice').innerText = price;
+        }
+    </script>
+    <footer>
+        <img src="../../img/pesca.gif" alt="Logo de Pesca" class="logo-footer">
+        <ul class="sociais">
+            <li><a href="https://wa.me/554298713665/" class="social-link">Whatsapp</a></li> 
+            <li><a href="https://www.instagram.com/jvl_pesca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link">Instagram</a></li>
+        </ul>
+        <hr>
+        <p>&copy; Todos os direitos reservados.</p>
+    </footer>
+ </body>
+</html>

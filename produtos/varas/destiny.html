@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JVL PESCA</title>
+    <link rel="icon" type="image/jpg" href="../../img/logo.png">
+  </head>
+ <body>
+    <header class="header">
+        <div class="logo-container">
+            <a href="/jvl-pesca/index.html">
+                <img src="../../img/logo.png" alt="logo-jvl" class="logo">
+            </a>
+        </div>
+        <div class="slogan">
+            <p>Pesque com qualidade, pesque com JVL!</p>
+        </div>
+    </header>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Imagem do produto -->
+        <div class="product-image">
+            <img id="productImage" src="https://arquivos.mercos.com/media/imagem_produto/307641/d72605ee-a1fd-11ef-9c98-8ec96caaccb0.jpg" alt="Produto">
+        </div>
+
+        <!-- Informações do produto -->
+        <div class="product-info">
+            <h1 id="productName">VARA DESTINY ELITE</h1>
+            <p id="productDescription">A Vara Destiny Elite é um equipamento de pesca de alta performance, projetado para pescadores que buscam o máximo de precisão, resistência e sensibilidade. Confeccionada com materiais avançados, como carbono de alta qualidade, ela oferece uma estrutura leve, porém robusta, garantindo longa durabilidade e resistência até mesmo nas condições mais exigentes de pesca. Seu design sofisticado e moderno proporciona conforto durante o uso, enquanto a ação progressiva permite um controle absoluto, seja para pescar em águas tranquilas ou mais desafiadoras. A Vara Destiny Elite é ideal para pescadores que desejam um alto desempenho em suas jornadas de pesca, oferecendo uma experiência incomparável.</p>
+            <p class="price" id="productPrice">R$ 418,98</p>
+
+            <!-- Botões para variações -->
+            <div class="buttons">
+                <button onclick="updateProduct('VARA DESTINY ELITE 20-40LB C-701XH', 'https://arquivos.mercos.com/media/imagem_produto/307641/d72605ee-a1fd-11ef-9c98-8ec96caaccb0.jpg', 'R$ 418,98')">20-40LB C-701XH</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateProduct(name, imageUrl, price) {
+            // Atualiza o nome, a imagem e o preço com as informações da variante selecionada
+            document.getElementById('productName').innerText = name;
+            document.getElementById('productImage').src = imageUrl;
+            document.getElementById('productPrice').innerText = price;
+        }
+    </script>
+    <footer>
+        <img src="../../img/pesca.gif" alt="Logo de Pesca" class="logo-footer">
+        <ul class="sociais">
+            <li><a href="https://wa.me/554298713665/" class="social-link">Whatsapp</a></li> 
+            <li><a href="https://www.instagram.com/jvl_pesca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link">Instagram</a></li>
+        </ul>
+        <hr>
+        <p>&copy; Todos os direitos reservados.</p>
+    </footer>
+ </body>
+</html>
